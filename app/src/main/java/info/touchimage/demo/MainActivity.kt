@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.singleTouchimageviewButton.setOnClickListener { startActivity(Intent(this@MainActivity, SingleTouchImageViewActivity::class.java)) }
         binding.viewpagerExampleButton.setOnClickListener { startActivity(Intent(this@MainActivity, ViewPagerExampleActivity::class.java)) }
+        binding.singleTouchimageviewButton.setOnClickListener { startActivity(Intent(this@MainActivity, SingleTouchImageViewActivity::class.java)) }
         binding.viewpager2ExampleButton.setOnClickListener { startActivity(Intent(this@MainActivity, ViewPager2ExampleActivity::class.java)) }
         binding.mirrorTouchimageviewButton.setOnClickListener { startActivity(Intent(this@MainActivity, MirroringExampleActivity::class.java)) }
         binding.switchImageButton.setOnClickListener { startActivity(Intent(this@MainActivity, SwitchImageExampleActivity::class.java)) }
