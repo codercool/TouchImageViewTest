@@ -1,4 +1,4 @@
 jdk:
   - openjdk17
 install:
-  - ./gradlew :touchview:build :touchview:publishToMavenLocal -x :touchview:test
+  - ./gradlew :touchviewt:build :touchviewt:publishToMavenLocal -x :touchviewt:test
