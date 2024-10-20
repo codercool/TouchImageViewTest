@@ -6,8 +6,8 @@ plugins {
 android {
     defaultConfig {
         applicationId "com.ortiz.touchdemo"
-        versionCode getGitCommitCount()
-        versionName getTag()
+        versionCode 1
+        versionName "1"
 
         minSdkVersion 21 // because of testLib Moka
         compileSdk defaultCompileSdkVersion
@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation project(':touchview')
+    implementation project(':touchviewt')
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.recyclerview:recyclerview:1.3.2'

@@ -2,6 +2,7 @@ package info.touchimage.demo
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import info.touchimage.demo.databinding.ActivityMainBinding
 
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        Log.i("---","---1")
 
         binding.viewpagerExampleButton.setOnClickListener { startActivity(Intent(this@MainActivity, ViewPagerExampleActivity::class.java)) }
         binding.singleTouchimageviewButton.setOnClickListener { startActivity(Intent(this@MainActivity, SingleTouchImageViewActivity::class.java)) }
